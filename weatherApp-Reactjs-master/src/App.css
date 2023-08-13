@@ -1,9 +1,4 @@
-/*--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 
 /*-- Reset Code --*/
 
@@ -193,7 +188,7 @@ img {
 /*-- Index-Page-Styling --*/
 
 body {
-  background: url("./images/background.jpg");
+  background: url("./Components/images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -234,7 +229,7 @@ h1 {
   width: 60%;
   height: 100%;
   float: left;
-  background: url("./images/city.jpg");
+  background: url("./Components/images/city.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -534,12 +529,14 @@ div#txt {
   .date-time {
     width: 100%;
     padding: 0;
+    text-align: center;
   }
   .dmy {
-    padding: 0;
-    margin-bottom: 35px;
+    /* padding-bottom: 20px; */
+    margin-top: -40px;
+    margin-left: 10px;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
   }
   div#txt {
     font-size: 30px;
@@ -549,7 +546,8 @@ div#txt {
   }
   .temperature {
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
+    padding-top: 10px;
   }
   .copyright {
     padding: 20px;
@@ -571,6 +569,8 @@ div#txt {
   .container {
     height: 60vh;
     margin-top: 60px;
+    /* padding-bottom: 30px; */
+    margin-bottom: 20px;
   }
   .mb-icon {
     top: 20% !important;
@@ -597,15 +597,23 @@ div#txt {
     min-height: 315px;
   }
   .dmy {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin-top: -60px;
   }
-  .date {
-    font-size: 18px;
+  .current-time{
+    font-size:larger;
+  }
+  .current-date {
+    font-size: larger;
+    
   }
   .temperature p {
     padding-bottom: 15px;
+    font-size: larger;
   }
-}
+  .temperature p>span {
+    font-size: larger;
+  }
 
 /*-- //Responsive Code --*/
 .cityHead {
@@ -691,4 +699,5 @@ div#txt {
   position: absolute;
   right: 20px;
   top: 1.5%;
+}
 }

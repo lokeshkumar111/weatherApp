@@ -5,29 +5,8 @@ import Forcast from "./forcast";
 import loader from "./images/WeatherIcons.gif";
 import ReactAnimatedWeather from "react-animated-weather";
 const dateBuilder = (d) => {
-  let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
   let day = days[d.getDay()];
   let date = d.getDate();
@@ -86,15 +65,6 @@ class Weather extends React.Component {
     clearInterval(this.timerID);
   }
 
-  // tick = () => {
-  //   this.getPosition()
-  //   .then((position) => {
-  //     this.getWeather(position.coords.latitude, position.coords.longitude)
-  //   })
-  //   .catch((err) => {
-  //     this.setState({ errorMessage: err.message });
-  //   });
-  // }
 
   getPosition = (options) => {
     return new Promise(function (resolve, reject) {
@@ -187,7 +157,8 @@ class Weather extends React.Component {
                 {this.state.temperatureF} &deg;F */}
               </div>
             </div>
-          </div>
+            </div>
+
           <Forcast icon={this.state.icon} weather={this.state.main} />
         </React.Fragment>
       );

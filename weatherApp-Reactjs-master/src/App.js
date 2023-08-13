@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import CurrentLocation from "./currentLocation";
+import React from "react";
+import CurrentLocation from "./Components/currentLocation";
 import "./App.css";
 
 function App() {
@@ -9,17 +9,13 @@ function App() {
         <CurrentLocation />
       </div>
       <div className="footer-info">
-        <a href="#">
-          Download Source Code
-        </a>{" "}
-        | Developed by{" "}
+        Created by{" "}
         <a target="_blank" href="#">
           Lokesh Kumar
         </a>{" "}
-        | Powered by{" "}
-        <a target="_blank" href="https://www.htmlhints.com/">
-          HTML HINTS
-        </a>
+        <a href="https://github.com/lokeshkumar111/weatherApp/tree/main/weatherApp-Reactjs-master">
+        | Download Source Code
+      </a>{" "}
       </div>
     </React.Fragment>
   );

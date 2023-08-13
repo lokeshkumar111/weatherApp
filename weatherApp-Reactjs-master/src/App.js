@@ -8,12 +8,12 @@ function App() {
       <div className="container">
         <CurrentLocation />
       </div>
-      <div className="footer-info">
+      <div style={{color:'white'}} className="footer-info">
         Created by{" "}
-        <a target="_blank" href="#">
+        <a target="_blank" href="#" style={{color:'floralwhite'}}>
           Lokesh Kumar
         </a>{" "}
-        <a href="https://github.com/lokeshkumar111/weatherApp/tree/main/weatherApp-Reactjs-master">
+        <a style={{color:'floralwhite', fontWeight:'bold'}} href="https://github.com/lokeshkumar111/weatherApp/tree/main/weatherApp-Reactjs-master">
         | Download Source Code
       </a>{" "}
       </div>

@@ -139,7 +139,7 @@ class Weather extends React.Component {
                 size={defaults.size}
                 animate={defaults.animate}
               />
-              <p>{this.state.main}</p>
+              <p style={{color:'white', fontSize:'larger'}}>{this.state.main}</p>
             </div>
             <div className="date-time">
               <div className="dmy">

@@ -223,6 +223,7 @@ h1 {
   height: 80vh;
   margin: 50px auto;
   background-color: rgba(0, 0, 0, 0.73);
+  /* padding-top:10px; */
 }
 
 .city {
@@ -361,6 +362,55 @@ div#txt {
   color: #ffeb3b;
 }
 
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+.search-box .img-box {
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 32px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+.search-box img {
+  width: 60%;
+  cursor: pointer;
+}
+.search-box .search-bar {
+  border: none;
+  padding: 10px 11px;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid;
+  font-size: 16px;
+}
+.search-box .search-bar::placeholder {
+  color: white;
+}
+.search-bar:focus {
+  outline: none;
+  border-bottom: 1px solid gray;
+  transition: all 1s ease-in-out;
+}
+
+.cityHead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
 /*-- //Index-Page-Styling --*/
 
 /*-- Responsive Code --*/
@@ -571,10 +621,15 @@ div#txt {
     margin-top: 60px;
     /* padding-bottom: 30px; */
     margin-bottom: 20px;
+    padding-bottom:10px;
   }
   .mb-icon {
-    top: 20% !important;
+    /* top: 20% !important;
     display: block !important;
+    margin-top:10px; */
+    position: absolute;
+    top:10px;
+    left:10px;
   }
   .forecast-icon,
   .today-weather h3 {
@@ -662,10 +717,10 @@ div#txt {
 .mb-icon {
   height: 100%;
   position: absolute;
-  top: 34%;
-  left: 36%;
+  top: 30%;
+  left: 30%;
   z-index: 1;
-  display: none;
+  /* display: none; */
 }
 .mb-icon p {
   color: white;
